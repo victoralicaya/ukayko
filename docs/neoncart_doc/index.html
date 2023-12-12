@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Neoncart - Premium Multipurpose Zen Cart Template Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <script src="assets/js/jquery.min.js"></script>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <!--[if lte IE 9]>
+			<script src="assets/js/html5shiv.min.js"></script>
+		<![endif]-->
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-offset-top="0">
+    <div class="container">
+        <div class="bs-docs-sidebar">
+            <ul id="accordion" class="nav nav-list bs-docs-sidenav">
+                <li class="intro">
+                    <img src="assets/images/logo.png" />
+                </li>
+                <li><a href="#welcome">Welcome</a></li>
+				<li><a href="#magento_theme_instruction">Theme Instruction</a></li>
+				<li><a href="#introduction">Introduction</a></li>
+				<li><a href="#package_content">Package Content</a></li>
+				<li class="panel"><a class="toggle" href="#tp_installation_dw" data-toggle="collapse" data-parent="#documenter_nav">Installation<i class="fa fa-chevron-down"></i></a>
+					<ul id="tp_installation_dw" class="collapse">
+						<li><a href="#installation" title="Quickstart">Quickstart</a></li>
+						<li><a href="#themefileinstallation" title="Theme File Installation">Theme File Installation</a></li>
+					</ul>
+				</li>
+				<li class="panel"><a class="toggle" href="#tp_homeconfig_dw" data-toggle="collapse" data-parent="#documenter_nav">Homepage Configuration<i class="fa fa-chevron-down"></i></a>
+					<ul id="tp_homeconfig_dw" class="collapse">
+						<li><a href="#homepage_settings" title="Quickstart">Homepage Settings</a></li>
+						<li class="panel"><a class="toggle" href="#tp_shortcodes_dw" data-toggle="collapse" data-parent="#documenter_nav">Homepage Short Codes<i class="fa fa-chevron-down"></i></a>
+							<ul id="tp_shortcodes_dw" class="collapse">
+								<li><a href="#hm_sc_wtslideshowmanager" title="WT Slideshow Manager">WT Slideshow Manager</a></li>
+								<li><a href="#hm_sc_pzentemplatebannermanager" title="WT Neoncart Banner Manager">WT Neoncart Banner Manager</a></li>
+								<li><a href="#hm_sc_producttabslider" title="Product Tab Slider">Product Tab Slider</a></li>
+								<li><a href="#hm_sc_products" title="Product Slider">Products</a></li>
+								<li><a href="#hm_sc_sidebarmegamenu" title="Sidebar Megamenu">Sidebar Megamenu</a></li>
+								<li><a href="#hm_sc_newsboxslider" title="News Box Slider">News Box Slider</a></li>
+								<li><a href="#hm_sc_testimonials" title="Testimonials">Testimonials</a></li>
+								<li><a href="#hm_sc_brandslider" title="Brands Slider">Brands Slider</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="panel"><a class="toggle" href="#template_settings_dw" data-toggle="collapse" data-parent="#documenter_nav">Template Settings <i class="fa fa-chevron-down"></i></a>
+					<ul id="template_settings_dw" class="collapse">
+						<li class="panel"><a class="toggle" href="#tp_general_dw" data-toggle="collapse" data-parent="#documenter_nav">General<i class="fa fa-chevron-down"></i></a>
+							<ul id="tp_general_dw" class="collapse">
+								<li><a href="#template_settings" title="General Settings">General Settings</a></li>
+								<li><a href="#tp_general_color" title="Colors">Colors</a></li>
+								<li><a href="#tp_fonts_settings" title="Fonts Settings">Fonts Settings</a></li>
+								<li><a href="#tp_general_product_slider" title="Product Slider">Product Slider</a></li>
+								<li><a href="#tp_general_testimonials" title="Testimonials Manager">Testimonials Manager</a></li>
+								<li><a href="#tp_general_social_links" title="Social Links">Social Links</a></li>
+								<li><a href="#tp_general_newsletter" title="Newsletter">Newsletter</a></li>
+								<li><a href="#tp_general_newsletter_pop" title="Newsletter">Newsletter Popup</a></li>
+								<li><a href="#tp_general_googlemap" title="Google Map">Google Map</a></li>
+								<li><a href="#tp_general_googlerecaptcha" title="Google ReCAPTCHA">Google ReCAPTCHA</a></li>
+							</ul>
+						</li>
+						<li class="panel"><a class="toggle" href="#tp_homepage_dw" data-toggle="collapse" data-parent="#documenter_nav">Home Page<i class="fa fa-chevron-down"></i></a>
+							<ul id="tp_homepage_dw" class="collapse">
+								<li><a href="#tp_homepage_settings" title="Header">Homepage Settings</a></li>
+							</ul>
+						</li>
+						<li class="panel"><a class="toggle" href="#tp_topbar_dw" data-toggle="collapse" data-parent="#documenter_nav">TopBar<i class="fa fa-chevron-down"></i></a>
+							<ul id="tp_topbar_dw" class="collapse">
+								<li><a href="#tp_topbar" title="TopBar">Topbar Promo Content</a></li>
+							</ul>
+						</li>
+						<li class="panel"><a class="toggle" href="#tp_header_dw" data-toggle="collapse" data-parent="#documenter_nav">Header<i class="fa fa-chevron-down"></i></a>
+							<ul id="tp_header_dw" class="collapse">
+								<li><a href="#tp_header" title="Header">Header</a></li>
+								<li><a href="#tp_header_headercontent" title="Header Content">Header Content</a></li>
+							</ul>
+						</li>
+						<li class="panel"><a class="toggle" href="#tp_footer_dw" data-toggle="collapse" data-parent="#documenter_nav">Footer<i class="fa fa-chevron-down"></i></a>
+							<ul id="tp_footer_dw" class="collapse">
+								<li><a href="#tp_footer" title="Footer">Footer</a></li>
+								<li><a href="#tp_footer_storeinfo" title="Store Info">Store Info</a></li>
+							</ul>
+						</li>
+						<li><a href="#tp_mainmenu" title="Main Menu">Main Menu</a></li>
+						<li><a href="#tp_banner_manager">Banner Manager</a></li>
+						<li><a href="#tp_categorypage">Category Page</a></li>
+						<li><a href="#tp_productlistpage">Products List Page</a></li>
+						<li><a href="#tp_productinfopage">Products Info Page</a></li>
+					</ul>
+				</li>
+				<li class="panel"><a class="toggle" href="#theme_extraconfig_dw" data-toggle="collapse" data-parent="#documenter_nav">Extra Configuration <i class="fa fa-chevron-down"></i></a>
+					<ul id="theme_extraconfig_dw" class="collapse">
+						<li><a href="#ec_wt_slideshow_manager" title="WT Slideshow Manager Configuration">WT Slideshow Manager</a></li>
+						<li><a href="#et_wtwbm" title="WT Neoncart Banner Manager">WT Neoncart Banner Manager</a></li>
+						<li><a href="#ec_disable_lang_cur_dropdown" title="Upload Theme">Disable Language/Currency Dropdown</a></li>
+						<li><a href="#ec_newsbox_manager" title="News Box Manager">News Box Manager</a></li>
+						<li><a href="#ec_best_seller_products" title="Best Seller Products">Best Seller Products</a></li>
+						<li><a href="#ec_footer_columns" title="Footer Columns">Footer Columns</a></li>
+						<li><a href="#ec_structured_data_config" title="Footer Columns">Structured Data Configuration</a></li>
+					</ul>
+				</li>
+				<li><a href="#tp_zc_plugins">Zencart Plugins</a></li>
+				<li><a href="#help_support">Help & Support</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="span8">
+                <section id="welcome">
+                    <div class="page-header">
+                        <h1>Welcome to Neoncart - Premium Multipurpose Zen Cart Template Documentation!</h1>
+                    </div>
+                    <h3>Thanks for Buying</h3>
+					<p>First of all, Thank you for purchasing our product. This user guide covers all options that the theme provides. Please read the documentation carefully as it may answer most of your questions. In case if you feel some aspect is not covered or have some questions, contact us via our author profile page contact form <a href="https://www.templatemonster.com/authors/templateoption/" target="_blank">here</a>. We will do our best 
+                        to answer you in shortest time possible.</p>
+                </section>
+				<section id="magento_theme_instruction">
+                    <div class="page-header">
+                        <h3>Neoncart Template Instruction</h3>
+                    </div>
+                    <p>We are extremely happy to present <strong>Neoncart Zen Cart Template</strong> to you, it is designed and developed by highly qualified Designer &amp; Developers in a way that make it usable for any type of <strong>E-Commerce store</strong>.</p>
+					<div class="alert alert-info">
+                    	Neoncart Template is compatible with the latest Zen Cart v158. 
+                    </div>
+					<div class="alert alert-info">
+                        Images shown in template are for demo puposes only. Actual Package does not include those images.
+                    </div>
+					<div class="alert alert-danger">
+                        <strong>Kindly Note : </strong>For any CSS changes in the theme, please add your custom CSS in <strong>stylesheet_user_customcss.css</strong> file, which can be found under <strong>includes\templates\neoncart\css</strong> directory. Changes done in any other theme defined CSS files may lost in future theme updates. We would not be responsible for those loss of CSS changes. Any queries in regards to that would not be entertained.
+                    </div>
+					<p>For more information regarding installing the Zencart platform, please see the Zencart Docs here. Please note that we do not give support or any questions related on how to install and maintain Zencart. For any faulty installation that may cause your website or our theme malfunction you should refer to Zencart support forum. Alternatively you can get help from your web hosting. </p>
+					<p>Please follow this guide carefully to get started with <strong>Neoncart Zencart Theme</strong>.</p>
+                </section>
+				<section id="introduction">
+					<div class="page-header"><h3>Introduction</h3></div>
+					<p>
+						<img src="assets/images/preview_image.jpg">
+					</p>
+					<p>
+                        Neoncart is a responsive theme for Multipurpose which uses the best practices of latest technologies and is compatible with all mobile devices, which comes with following features. You can change it from theme Options. Continue reading the documentation to uncover all the features provided.
+					</p>
+					<ul>
+						<li>Fully Supports latest Zen Cart v1.5.8</li>
+						<li>Theme Package &amp; Quickstart Included.</li>
+						<li>One Click Install Demo Data and Easy to Customize with Strong Admin Panel</li>
+						<li>Built using latest technologies like Bootstrap 5.2.x, HTML5/CSS3</li>
+						<li>Creative And Modern Design</li>
+						<li>Fully Responsive</li>
+						<li>Easily Customizable Content in Homepage using Short Codes</li>
+						<li>Fasted Loading Zen Cart Theme</li>
+						<li>3 Homepages</li>
+						<li>3 Header Styles</li>
+						<li>6 Footer Styles</li>
+						<li>Google Richsnippets Included</li>
+						<li>WT Neoncart Banner Manager</li>
+						<li>WT Slideshow Manager</a></li>
+						<li>Quick View</a></li>
+						<li>Strong Theme Admin Panel</li>
+						<li>Mailchimp Integration</li>
+						<li>News Box Manager</li>
+						<li>Testimonials Manager </li>
+						<li>Best Sellers Products Module</li>
+						<li>Product Grid - List View</li>
+						<li>Fotorama for Product Images</li>
+						<li>Elevate Zoom Styles</li>
+						<li>Add to Wishlist</li>
+						<li>Ajax Add to Compare</li>
+						<li>Instant Search Suggestions</li>
+						<li>CSS/JS Loader</li>
+						<li>Product Image Loader</li>
+						<li>Ultimate SEO Urls</li>
+						<li>Newsletter Popup</li>
+						<li>500+ Google Web Fonts Support</li>
+						<li>Mega Menu, Vertical Menu, Simple Menu and Mobile Menu</li>
+						<li>Related Products Module</li>
+						<li>Custom Homepage, Category, Product List, Product Page with 1 Column, 2 Columns or 3 Columns layout</li>
+						<li>2 Styles to Display Main Navigation Menu</li>
+						<li>2 Styles to Display Categories</li>
+						<li>2 Type (Default, Alternate Image) to Display Product Image</li>
+						<li>2 Style (Fade and Vertical) to Display Alternate Images</li>
+						<li>4 Styles (Elevate Zoom Plus, Fotorama Slider, Light Box and Zen Cart Default) to Display Product Image Effect</li>
+						<li>3 Product Page Layouts (Big size, Medium size and Small Size) to Display Product Image</li>
+						<li>2 Style (Carousel, Micro and Mircro Samll Style) to Display Product Slider</li>
+						<li>Custom Product Elements (Reviews, Quickview, Price etc..) Hide and Show</li>
+						<li>Template Options to Display number of Products Per Row in Products List</li>
+						<li>Template Options to Display number of Products Per Row and Per Columns in Product Slider</li>
+						<li>Advanced Theme Admin Panel. Customise the template as per your requirement.</li>
+						<li>Theme Color and Second Theme Color Supported.</li>
+						<li>Admin Product Labels Colors.</li>
+						<li>Fast Support &amp; Regular Updates</li>
+					</ul>
+
+				</section>
+				<section id="package_content">
+					<div class="page-header"><h3>Package Content</h3></div>
+					<p>Upon downloading the main package zip, you'll have all files you need inside. Zip package contains the following files and folders:</p>
+					<ol>
+						<li>Documentation folder</li>
+						<li>QuickstartPackage-ZCv158</li>
+						<li>ThemePackageFiles-ZCv158</li>
+						<li>Neoncart version changed files</li>
+						<li>Licensing information</li>
+						<li>changelog.txt</li>
+					</ol>
+				</section>
+				<section id="installation">
+					<div class="page-header"><h3>Installation Guide</h3></div>
+					<div class="alert alert-info">
+                        <strong>Note : </strong>
+                        You are advised to read the installation procedure carefully, backup your store files and database first before installation or making any changes.
+                    </div>
+					<div class="alert alert-info">
+						<strong>Note : </strong>
+                        Please Create the Database before Installation. The name of Database will be required when asked during Installation.
+                    </div>
+					<p>The theme can be installed in two 2 ways</p>
+					<ol>
+						<li><a href="#qsinstallation">Quickstart Installation</a> : If you want to test the theme and check how the live demo was configured, you can install demo containing the sample data and settings from our live demo.</li>
+						<li><a href="#themefileinstallation">Theme Files Installation</a> : If you already have a Zencart store and want to apply the theme to that store. For the store running <strong>Zen Cart v157 or v157x</strong>, please follow <a href="#themefileinstallation">these steps</a>.
+					</ol>
+					<h3 id="qsinstallation">Quickstart Installation</h3>
+					<ol class="fontsize90">
+						<li>Quickstart Theme Installation is only for the users who want the latest Zencart version i.e v158</li>
+						<li>Unzip the main downloaded package and find the <span class="color">QuickstartPackage-ZCv158</span> folder.</li>
+						<li>Upload the content of this directory to your server using the FTP client or Cpanel</li>
+						<li>Start installation by typing the URL of the directory where the files have been placed. <br><strong>(Ex: localhost/ [directory name] /installation/index.php or domain name/ [directory name] /installation/index.php)</strong><br>The initial installation page should appear as normal Zencart installation and then follow the next steps as shown below : </li>
+					</ol>
+					<h4 class="color">Database Setup</h4>
+					<p>This step requires the Database information for Installation. Image below shows the Steps mentioned.</p>
+					<ul class="fontsize90">
+						<li>Enter your Database Host Name. (Ex: localhost)</li>
+						<li>Enter your Database Username. (Ex: root)</li>
+						<li>Enter your Database Password. (As per your requirement)</li>
+						<li>Enter your Database Name. (Ex: zencart)</li>
+						<li>Leave Store Identifier (Table Prefix) field empty.</li>
+						<li>Click on "Continue". This will take you to the next step of installation process.</li>
+					</ul>
+					<p><img src="assets/images/step-4.png" alt="Step 4"></p>
+					<h4 class="color">Admin Setup</h4>
+					<p>
+						<ul class="fontsize90">
+							<li>Enter the admin information as per your requirement and click on Continue.</li>
+							<li>A temporary Admin Password will be created and the admin directory will be renamed automatically as per the new Zencart installation process. </li>
+						</ul>
+						<img src="assets/images/step-7.png" alt="Step 7">
+					</p>
+					<hr>
+					<h4 class="color">Setup Finished</h4>
+					<p>
+						<ul class="fontsize90">
+							<li>This will complete the installation process and the page with both Admin and Store Front links will appear as shown below.</li>
+							<li>Now go to your installation directory and rename/delete the <span class="">zc_install</span> directory.</li>
+							<li>Click on Store Admin URL and it will ask to refresh the page again and a normal zencart admin login page will open. Enter the Admin Username and Temporary password. This will prompt you to change the temporary password as per the normal zen cart installation process</li>
+						</ul>
+						<img src="assets/images/step-8.png" alt="Step 8">
+						<img src="assets/images/admin-2.png" alt="Admin 2">
+					</p>
+					<hr>
+					<h4 class="color">Store Setup</h4>
+					<p>
+						<ul class="fontsize90">
+							<li>When you logged into you store admin Panel and you can will two alert messages on top of your store admin as shown in the image below. Install the Related Products Module and Neoncart Template Settings by clicking on <span class="color">Click to Install </span>link. </li>
+						</ul>
+						<img src="assets/images/admin-theme-installation.png" alt="Admin 1">
+						<ul class="fontsize90">
+							<li>Please enter the store detail as shown in above image.</li>
+						</ul>
+					</p>
+					<hr>
+					<br/>
+					<hr>
+					<br>
+					<h3 id="themefileinstallation">Theme Files Installation</h3>
+					<ol class="fontsize90">
+						<li>Unzip the main downloaded package and find the Neoncart Theme package folder as per your current Zen Cart version.</li>
+						<li>Rename the <span class="color">YOUR-ADMIN-FOLDER-NAME</span> directory with the name of your existing store admin directory.</li>
+						<li>Now copy all the files and directories of the ThemePackageFiles to your existing store directory. This will replace some files in your existing store.</li>
+						<li>Login to you Store Admin Panel and you will see two alert messages on top of your store admin panel as shown in the image below. Install the Neoncart Template Settings by clicking on <span class="color">Click to Install </span>link. </li>
+						<img src="assets/images/admin-theme-installation.png" alt="Neoncart"><br/><br/>
+						<li>Once that is done you will see the <span class="color">Template has been installed successfully.</span> message on top and will be redirected to the Theme Admin Panel.</li>
+					</ol>
+                    <div class="alert alert-danger">
+                    	<strong>Important:</strong> Please note that as authors of this theme we are able to provide support 
+                        only for the features which we created and for the issues related strictly to this theme. We do not 
+                        provide support for Zencart configuration, installation, maintenance, customization etc.
+                    </div> 
+				</section>
+				<section id="homepage_settings">
+					<div class="page-header"><h3>Homepage Settings</h3></div>
+					<p>As of now Neoncart comes with 19 premade homepage layouts which can be seen on our <a href="https://neoncart.wttechdesign.com/demo">live demo</a></p>
+					<p>When you install the theme all our sample data as shown in the live demo gets installed on your server/localhost too. We have made the configuration of theme very easy with the Advanced theme panel, though if you desire to get the replica of our homepage demos follow the steps metioned below.</p>
+					<p>Before continuing we expect that you have read the <a href="#template_settings">Template Settings</a> thouroughly and are very well aware of setting up those values, so this section will not cover any of those part.</p>
+					<hr>
+					<p>To edit homepage content go to Store <code> Admin > Tools > Define Pages Editor</code>.
+					<p>Select <span class="color">define_homepage_xxx.php</span> homepage version want to edit. Here you can add/delete/edit content and change position of content.</p>
+					<p>In Neoncart Zencart Theme we have provided the short codes for the specific content like Slideshow, Banners, Products, Brands etc..</p>
+					<p>We have provided the some short codes below that handled the homepage only.</p>
+					<ul>
+						<li id="hm_sc_wtslideshowmanager"><h4>WT Slideshow Manager</h4>
+							<p>WT Slideshow Manager short code use to display Slideshow in home page (Short Codes) and Other Pages (PHP Code). you can handle slidershow from <a href="#ec_wt_slideshow_manager">WT Slideshow Manager</a>.
+							<pre><code><xmp><!-- WT SLIDESHOW MANAGER -->
+<div class="nomargin container-indent">
+	[wtsm_slideshow ID="1"]
+</div>
+<!-- /WT SLIDESHOW MANAGER --></xmp></code></pre>
+							<p>Below list of options support in this short code.</p>
+							<ul>
+								<li><strong><em>ID &gt;</em></strong> Enter slider id.</li>
+							</ul>
+						</li>
+						<li id="hm_sc_pzentemplatebannermanager"><h4>WT Neoncart Banner Manager</h4>
+							<p>wtwbm_slider short code use to display banners in home page. you can set banners styles and Add/Edit/Delete Banners from <a href="#et_wtwbm">WT Neoncart Banner Manger</a>.
+							<br>
+							<strong>Homepage Define Page Editor Only:</strong>
+							<pre><code><xmp><!-- banner-area-start -->
+[wtwbm_slider ID="1"]
+<!-- banner-area-end --></xmp></code></pre>
+						<br>
+							<strong>Other page php file:</strong>
+							<pre><code><xmp><!-- banner-area-start -->
+wt_neoncart_banner_manager("1");
+<!-- banner-area-end --></xmp></code></pre>
+						<p>User above php function for display banners in zencart pages.
+						</li>
+						<li id="hm_sc_producttabslider"><h4>Product Tab List</h4>
+							<p>Product Tab List short code use to display Featured, Bestseller, New Products and Specials type of products in home page.</a>.
+							<pre><code><xmp><!-- product-area-start -->
+<section class="product_section sec_ptb_100 bg_white clearfix">
+	<div class="container">
+		<div class="row justify-content-lg-between">
+			<div class="col-lg-3">
+				<div class="supermarket_sidebar_tab mb_30">
+					<div class="wrap_heade bg_supermarket_red clearfix">
+						<h2>Top Flash Deal</h2>
+						<span>A wide selection of items</span>
+					</div>
+					<ul class="ul_li_block nav" role="tablist">
+						<li><a class="nav-link active" data-bs-toggle="pill" data-bs-target="#top_sale_tab">Top Sales</a></li>
+						<li><a class="nav-link" data-bs-toggle="pill" data-bs-target="#tv_video_tab">TV & Video</a></li>
+						<li><a class="nav-link" data-bs-toggle="pill" data-bs-target="#cameras_tab">Cameras</a></li>
+						<li><a class="nav-link" data-bs-toggle="pill" data-bs-target="#audio_tab">Audio</a></li>
+						<li><a class="nav-link" data-bs-toggle="pill" data-bs-target="#cell_phones_tab">Cell Phones</a></li>
+						<li><a class="nav-link" data-bs-toggle="pill" data-bs-target="#computers_tab">Computers</a></li>
+						<li><a class="nav-link" data-bs-toggle="pill" data-bs-target="#accesoriess_tab">Accesoriess</a></li>
+					</ul>
+				</div>
+				[wtwbm_slider ID="2"]
+			</div>
+
+			<div class="col-lg-9">
+				<div class="tab-content">
+					<div id="top_sale_tab" class="tab-pane fade active bg_white supermarket_product_columns">
+						[products type="best_sellers" style="grid" max_products="12" show_xxl_columns="4" show_xl_columns="4" show_lg_columns="4" show_md_columns="2" show_sm_columns="1" show_xs_columns="1" show_product_reviews="false" title="none"]
+					</div>
+					<div id="tv_video_tab" class="tab-pane fade bg_white supermarket_product_columns">
+						[products type="category_products" category="120" style="grid" max_products="9" show_xxl_columns="4" show_xl_columns="4" show_lg_columns="4" show_md_columns="2" show_sm_columns="1" show_xs_columns="1" title="none"]
+					</div>
+					<div id="cameras_tab" class="tab-pane fade bg_white supermarket_product_columns">
+						[products type="category_products" category="114" style="grid" max_products="9" show_xxl_columns="4" show_xl_columns="4" show_lg_columns="4" show_md_columns="2" show_sm_columns="1" show_xs_columns="1" title="none"]
+					</div>
+					<div id="audio_tab" class="tab-pane fade bg_white supermarket_product_columns">
+						[products type="category_products" category="136" style="grid" max_products="9" show_xxl_columns="4" show_xl_columns="4" show_lg_columns="4" show_md_columns="2" show_sm_columns="1" show_xs_columns="1" title="none"]
+					</div>
+					<div id="cell_phones_tab" class="tab-pane fade bg_white supermarket_product_columns">
+						[products type="category_products" category="142" style="grid" max_products="9" show_xxl_columns="4" show_xl_columns="4" show_lg_columns="4" show_md_columns="2" show_sm_columns="1" show_xs_columns="1" title="none"]
+					</div>
+					<div id="computers_tab" class="tab-pane fade bg_white supermarket_product_columns">
+						[products type="category_products" category="155" style="grid" max_products="9" show_xxl_columns="4" show_xl_columns="4" show_lg_columns="4" show_md_columns="2" show_sm_columns="1" show_xs_columns="1" title="none"]
+					</div>
+					<div id="accesoriess_tab" class="tab-pane fade bg_white supermarket_product_columns">
+						[products type="category_products" category="142" style="grid" max_products="9" show_xxl_columns="4" show_xl_columns="4" show_lg_columns="4" show_md_columns="2" show_sm_columns="1" show_xs_columns="1" title="none"]
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section></xmp></code></pre>
+							<p>Below list of options support in this short code.</p>
+							<ul>
+								<li><strong><em>type &gt;</em></strong> Here you can set products type <span class="color">new_products</span>, <span class="color">featured_products</span>, <span class="color">best_sellers</span>, <span class="color">top_rated_products</span>, <span class="color">custom_products</span>, <span class="color">category_products</span> and <span class="color">special_products</span> options.</li>
+								<li><strong><em>style &gt;</em></strong> Here you can set products display style <span class="color">slider</span>, <span class="color">grid</span>, <span class="color">micro_small_grid</span>, <span class="color">micro_slider</span>, <span class="color">micro_small_grid</span>, <span class="color">micro_small_slider</span> and <span class="color">micro_list</span> options.</li>
+								<li><strong><em>max_products &gt;</em></strong> Here you can set maximum numbers of products display in slider.</li>
+								<li><strong><em>category &gt;</em></strong> Here you can set categories_id with comma separate. This option affected only <span class="color">category_products</span> Type.</li>
+								<li><strong><em>products &gt;</em></strong> Here you can set products_id with comma separate. This option affected only <span class="color">custom_products</span> Type.</li>
+								<li><strong><em>show_xxl_columns &gt;</em></strong> Number of Columns above 1400px width.</li>
+								<li><strong><em>show_xl_columns &gt;</em></strong> Number of Columns within (1200px - 1400px) width.</li>
+								<li><strong><em>show_lg_columns &gt;</em></strong> Number of Columns within (992px - 1199px) width.</li>
+								<li><strong><em>show_md_columns &gt;</em></strong> Number of Columns within (768px - 991px) width.</li>
+								<li><strong><em>show_sm_columns &gt;</em></strong> Number of Columns within (576px - 767px) width.</li>
+								<li><strong><em>show_xs_columns &gt;</em></strong> Number of Columns within (480px - 575px) width.</li>
+								<li><strong><em>show_rows &gt;</em></strong> Here you can set numbers of rows display in slider.</li>
+								<li><strong><em>title &gt;</em></strong> Set the title to display in slider title. if you want to hide slider title set <span class="color">none</span> options.</li>
+								<li><strong><em>title_position &gt;</em></strong> Set the title position Like <span class="color">left</span>,<span class="color">right</span> and <span class="color">center</span> options.</li>
+								<li><strong><em>product_class &gt;</em></strong> you can add extra product class.</li>
+								<li><strong><em>show_product_image &gt;</em></strong> you can true and false to display product image.</li>
+								<li><strong><em>show_product_name &gt;</em></strong> you can true and false to display product name.</li>
+								<li><strong><em>show_product_reviews &gt;</em></strong> you can true and false to display product review.</li>
+								<li><strong><em>show_product_price &gt;</em></strong> you can true and false to display product price.</li>
+								<li><strong><em>show_product_labels &gt;</em></strong> you can true and false to display product labels.</li>
+								<li><strong><em>show_product_buttons &gt;</em></strong> you can true and false to display product buttons like add to cart, whishlist, quick view and compare.</li>
+							</ul>
+						</li>
+						<li id="hm_sc_products"><h4>Products</h4>
+							<p>Product short code use to display Featured, Bestseller, New Products, Custom Products, Top Rated Products and Specials type of products slider in home page.</a>
+							<br>
+							<strong>Display Products Style:</strong>
+							<div class="row">
+								<div class="col-sm-12 col-xs-12">
+									<h4>Slider</h4>
+									<p><a class="img-lnk" href="assets/images/hm_slider.png"><img class="img" src="assets/images/hm_slider.png" title="Product Slider" /></a></p>
+									<pre><code><xmp>[products type="featured_products" style="slider" max_products="5" show_xxl_columns="4" show_xl_columns="4" show_lg_columns="4" show_md_columns="3" show_sm_columns="2" show_xs_columns="1" title="none" product_class="btn-icon-text"]</xmp></code></pre>
+								</div>
+								<div class="col-sm-12 col-xs-12">
+									<h4>Micro Grid</h4>
+									<p><a class="img-lnk" href="assets/images/hm_micro_grid.png"><img class="img" src="assets/images/hm_micro_grid.png" title="Micro Grid" /></a></p>
+									<pre><code><xmp>[products type="best_sellers" style="grid" style="micro_grid" max_products="6" show_xxl_columns="3" show_xl_columns="3" show_lg_columns="3" show_md_columns="2" show_sm_columns="1" show_xs_columns="1" title="none" product_class="btn-icon-text"]</xmp></code></pre>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 col-xs-12">
+									<h4>Micro Small Grid</h4>
+									<p><a class="img-lnk" href="assets/images/hm_micro_small_grid.png"><img class="img" src="assets/images/hm_micro_small_grid.png" title="Micro Small Slider" /></a></p>
+									<pre><code><xmp>[products type="category_products" category="152" style="micro_small_grid" max_products="3" show_xxl_columns="1" show_xl_columns="1" show_lg_columns="1" show_md_columns="1" show_sm_columns="1" show_xs_columns="1" title="none" show_product_buttons="false" show_product_labels="false"]</xmp></code></pre>
+								</div>
+								<div class="col-sm-12 col-xs-12">
+									<h4>Micro Small Slider</h4>
+									<p><a class="img-lnk" href="assets/images/hm_micro_small_slider.png"><img class="img" src="assets/images/hm_micro_small_slider.png" title="Mircro Small slider Product" /></a></p>
+									<pre><code><xmp>[products type="best_sellers" style="micro_small_slider" max_products="4" show_rows="3" show_xxl_columns="1" show_xl_columns="1" show_lg_columns="1" show_md_columns="1" show_sm_columns="1" show_xs_columns="1" title="none" show_product_buttons="false" show_product_labels="false"]</xmp></code></pre>
+								</div>
+							</div>
+							<p>Below list of options support in this short code.</p>
+							<ul>
+								<li><strong><em>type &gt;</em></strong> Here you can set products type <span class="color">new_products</span>, <span class="color">featured_products</span>, <span class="color">best_sellers</span>, <span class="color">top_rated_products</span>, <span class="color">custom_products</span>, <span class="color">category_products</span> and <span class="color">special_products</span> options.</li>
+								<li><strong><em>style &gt;</em></strong> Here you can set products display style <span class="color">slider</span>, <span class="color">grid</span>, <span class="color">micro_small_grid</span>, <span class="color">micro_slider</span>, <span class="color">micro_small_grid</span>, <span class="color">micro_small_slider</span> and <span class="color">micro_list</span> options.</li>
+								<li><strong><em>max_products &gt;</em></strong> Here you can set maximum numbers of products display in slider.</li>
+								<li><strong><em>category &gt;</em></strong> Here you can set categories_id with comma separate. This option affected only <span class="color">category_products</span> Type.</li>
+								<li><strong><em>products &gt;</em></strong> Here you can set products_id with comma separate. This option affected only <span class="color">custom_products</span> Type.</li>
+								<li><strong><em>show_xxl_columns &gt;</em></strong> Number of Columns above 1400px width.</li>
+								<li><strong><em>show_xl_columns &gt;</em></strong> Number of Columns within (1200px - 1400px) width.</li>
+								<li><strong><em>show_lg_columns &gt;</em></strong> Number of Columns within (992px - 1199px) width.</li>
+								<li><strong><em>show_md_columns &gt;</em></strong> Number of Columns within (768px - 991px) width.</li>
+								<li><strong><em>show_sm_columns &gt;</em></strong> Number of Columns within (576px - 767px) width.</li>
+								<li><strong><em>show_xs_columns &gt;</em></strong> Number of Columns within (480px - 575px) width.</li>
+								<li><strong><em>show_rows &gt;</em></strong> Here you can set numbers of rows display in slider.</li>
+								<li><strong><em>title &gt;</em></strong> Set the title to display in slider title. if you want to hide slider title set <span class="color">none</span> options.</li>
+								<li><strong><em>title_position &gt;</em></strong> Set the title position Like <span class="color">left</span>,<span class="color">right</span> and <span class="color">center</span> options.</li>
+								<li><strong><em>product_class &gt;</em></strong> you can add extra product class.</li>
+								<li><strong><em>show_product_image &gt;</em></strong> you can true and false to display product image.</li>
+								<li><strong><em>show_product_name &gt;</em></strong> you can true and false to display product name.</li>
+								<li><strong><em>show_product_reviews &gt;</em></strong> you can true and false to display product review.</li>
+								<li><strong><em>show_product_price &gt;</em></strong> you can true and false to display product price.</li>
+								<li><strong><em>show_product_labels &gt;</em></strong> you can true and false to display product labels.</li>
+								<li><strong><em>show_product_buttons &gt;</em></strong> you can true and false to display product buttons like add to cart, whishlist, quick view and compare.</li>
+							</ul>
+						</li>
+						<li id="hm_sc_newsboxslider"><h4>News Box Slider</h4>
+							<p>News Box slider short code use to display latest news in in home page. you can handle news box from <a href="#tp_newsbox">Template Settings</a>.
+							<pre><code><xmp>[news_slider max_news="4" show_xxl_columns="3" show_xl_columns="3" show_lg_columns="3" show_md_columns="3" show_sm_columns="2" show_xs_columns="1"]</xmp></code></pre>
+							<p>Below list of options support in this short code.</p>
+							<ul>
+								<li><strong><em>title &gt;</em></strong> Set the title to display in slider title.</li>
+								<li><strong><em>title_position &gt;</em></strong> You can set <span class="color">left</span>, <span class="color">center</span> and <span class="color">right</span> position for dislay slider title.</li>
+								<li><strong><em>max_news &gt;</em></strong> Here you can set maximum numbers of news display in slider.</li>
+								<li><strong><em>show_xxl_columns &gt;</em></strong> Number of Columns above 1400px width.</li>
+								<li><strong><em>show_xl_columns &gt;</em></strong> Number of Columns within (1200px - 1400px) width.</li>
+								<li><strong><em>show_lg_columns &gt;</em></strong> Number of Columns within (992px - 1199px) width.</li>
+								<li><strong><em>show_md_columns &gt;</em></strong> Number of Columns within (768px - 991px) width.</li>
+								<li><strong><em>show_sm_columns &gt;</em></strong> Number of Columns within (576px - 767px) width.</li>
+								<li><strong><em>show_xs_columns &gt;</em></strong> Number of Columns within (480px - 575px) width.</li>
+							</ul>
+						</li>
+						<li id="hm_sc_testimonials"><h4>Testimonials</h4>
+							<p>Testimonials short code use to display testimonial slider in home page. you can handle testimonials from <a href="#tp_general_testimonials">Template Settings</a>.
+							<pre><code><xmp><!-- testimonials-start -->
+<div class="aside-block">
+<div class="title-with-arrows">
+	<h2 class="text-left">Clients Say</h2>
+	<div class="carousel-arrows"></div>
+</div>
+[testimonials style="slider" show_xxl_columns="1" show_xl_columns="1" show_lg_columns="1" show_md_columns="1" show_sm_columns="1" show_rows="2" max_testimonials="4" title="none"]
+</div>
+<!-- testimonials-end --></xmp></code></pre>
+						<p>Below list of options support in this short code.</p>
+						<ul>
+							<li><strong><em>style &gt;</em></strong> Here you can set display style <span class="color">slider</span>, <span class="color">grid</span> options.</li>
+							<li><strong><em>max_testimonials &gt;</em></strong> Here you can set maximum numbers of testimonials display in slider.</li>
+							<li><strong><em>show_xxl_columns &gt;</em></strong> Number of Columns above 1400px width.</li>
+								<li><strong><em>show_xl_columns &gt;</em></strong> Number of Columns within (1200px - 1400px) width.</li>
+								<li><strong><em>show_lg_columns &gt;</em></strong> Number of Columns within (992px - 1199px) width.</li>
+								<li><strong><em>show_md_columns &gt;</em></strong> Number of Columns within (768px - 991px) width.</li>
+								<li><strong><em>show_sm_columns &gt;</em></strong> Number of Columns within (576px - 767px) width.</li>
+								<li><strong><em>show_xs_columns &gt;</em></strong> Number of Columns within (480px - 575px) width.</li>
+							<li><strong><em>title &gt;</em></strong> Set the title to display in slider title. if you want to hide slider title set <span class="color">none</span> options.</li>
+							<li><strong><em>title_position &gt;</em></strong> Set the title position Like <span class="color">left</span>,<span class="color">right</span> and <span class="color">center</span> options.</li>
+						</ul>
+						</li>
+						<li id="hm_sc_brandslider"><h4>Brands Slider</h4>
+							<p>Brands Slider short code use to display brands slider in home page.
+							<pre><code><xmp><!--brands-start-->
+<div class="container-indent">
+	<div class="container container-fluid-custom-mobile-padding">
+		<div class="tt-block-title">
+			<h2 class="tt-title">POPULAR</h2>
+			<div class="tt-description">CLOTHING BRANDS</div>
+		</div>
+		<div class="tt-img-box-listing ">
+			[brands style="grid" show_xxl_columns="3" show_xl_columns="6" show_lg_columns="6" show_md_columns="4" show_sm_columns="2" show_xs_columns="1"]
+			[brands style="slider" max_brands="16" show_xxl_columns="8" show_xl_columns="8" show_lg_columns="8" show_md_columns="6" show_sm_columns="4" show_xs_columns="3"]
+		</div>
+	</div>
+</div>
+<!--brands-end--></xmp></code></pre>
+							<p>Below list of options support in this short code.</p>
+							<ul>
+								<li><strong><em>style &gt;</em></strong> Here you can set display style <span class="color">slider</span>, <span class="color">grid</span> and <span class="color">box</span> options.</li>
+								<li><strong><em>max_brands &gt;</em></strong> Here you can set maximum numbers of brands display in slider.</li>
+								<li><strong><em>show_xxl_columns &gt;</em></strong> Number of Columns above 1400px width.</li>
+								<li><strong><em>show_xl_columns &gt;</em></strong> Number of Columns within (1200px - 1400px) width.</li>
+								<li><strong><em>show_lg_columns &gt;</em></strong> Number of Columns within (992px - 1199px) width.</li>
+								<li><strong><em>show_md_columns &gt;</em></strong> Number of Columns within (768px - 991px) width.</li>
+								<li><strong><em>show_sm_columns &gt;</em></strong> Number of Columns within (576px - 767px) width.</li>
+								<li><strong><em>show_xs_columns &gt;</em></strong> Number of Columns within (480px - 575px) width.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section id="template_settings">
+                    <div class="page-header">
+                        <h3>Templates Settings</h3>
+                    </div>
+					<p>Neoncart template can be customized according to customer's need. Template Settings makes customization very easy and hassle free.</br>
+					Once the Template is installed completely, Template Settings menu can be found under Tools > Neoncart Template Settings in admin area.</br>
+					Following are the features that can be customized using Neoncart Theme Panel.</p>
+					<ul>
+						<li><h4>General</h4>
+							<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; General &gt; General Settings</code> Panel section to start your custom settings configuration.</p>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_general_general.png"><img class="img" src="assets/images/tp_general_general.png" title="General Settings" /></a>
+								</div>
+								<div class="col-md-6">
+									<br>
+									<p><strong><em>General Page Layout &gt;</em></strong> Here you can choose options for the page layouts.</p>
+									<p><strong><em>Page Loader &gt;</em></strong> Here you can choose options for display Page Loader. If you want to set custom page loader images you can set custom option.</p>
+									<p><strong><em>Image Loader &gt;</em></strong> Here you can Enable - Disable Images Loader.</p>
+									<p><strong><em>Container Width &gt;</em></strong> Here you can set container width.</p>
+								</div>
+							</div>
+						</li>
+						<li id="tp_general_color"><h4>Color</h4>
+							<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; General &gt; Color</code> Panel section to start your custom settings configuration.</p>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_general_color.png"><img class="img" src="assets/images/tp_general_color.png" title="Color" /></a>
+								</div>
+								<div class="col-md-6">
+									<br>
+									<p><strong><em>Theme Color &gt;</em></strong> The default theme color is set to #cc1414, you can enter the color code of your choice or select the color from the color picker provided.</p>
+									<p><strong><em>Theme Second Color &gt;</em></strong> The default theme color is set to #0062bd, you can enter the color code of your choice or select the color from the color picker provided. Second color affected like button hover background color.</p>
+									<p><strong><em>New Label Color &gt;</em></strong> The default theme color is set to #cc1414, you can enter the color code of your choice or select the color from the color picker provided. New Label color affected to new product label color.</p>
+									<p><strong><em>Special Label Color &gt;</em></strong> The default theme color is set to #0062bd, you can enter the color code of your choice or select the color from the color picker provided. Specials Label color affected to special product label color.</p>
+								</div>
+							</div>
+						</li>
+						<li id="tp_fonts_settings"><h4>Fonts Settings</h4>
+							<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; General &gt; Fonts Settings</code> Panel section to start your custom settings configuration.</p>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_general_fontsettings.png"><img class="img" src="assets/images/tp_general_fontsettings.png" title="Fonts Settings" /></a>
+								</div>
+								<div class="col-md-6">
+									<br>
+									<p><strong><em>General Font Family &gt;</em></strong> Neoncart comes with 500+ Goolge fonts preloaded. The General Font family will affect all the fonts in theme excluding the banner cations that you have added. Default: Open Sans</p>
+									<p><strong><em>Heading Font Family &gt;</em></strong> Neoncart comes with 500+ Goolge fonts preloaded. The Heading Font family will affect all Heading, Title etc. Default: Oswald</p>
+									<p><strong><em>Banner Heading Font Family &gt;</em></strong> Neoncart comes with 500+ Goolge fonts preloaded. The Banner Heading Font Family will affect all banner heading etc. Default: Poppins</p>
+									<p><strong><em>Character Set: Latin Extended &gt;</em></strong> Only selected fonts support extended character sets. For a complete list of available fonts and font subsets please refer to <a href="https://fonts.google.com/">Google Web Fonts</a>.</p>
+									<p><strong><em>Custom Character Subset &gt;</em></strong> Only selected fonts support character sets. For a complete list of available fonts and font subsets please refer to <a href="https://fonts.google.com/">Google Web Fonts</a>. eg: greek,greek-ext</p>
+								</div>
+							</div>
+						</li>
+						<li id="tp_general_product_slider"><h4>Product Slider</h4>
+							<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; General &gt; Product Slider</code> Panel section to start your custom settings configuration.</p>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_general_product_slider.png"><img class="img" src="assets/images/tp_general_product_slider.png" title="Product Slider" /></a>
+								</div>
+								<div class="col-md-6">
+									<br>
+									<p><strong><em>Products Slider Show Columns &gt;</em></strong> Show the numbers of products that you set in specific size of screen width</p>
+									<p><strong><em>Additional Image Style &gt;</em></strong> This option comes with 2 different values. Selecting default option will remove the additional images from the products and will have a simple view.</p>
+									<p>If you want to display Alternate Images, it can be done by selecting <strong>Hover Effect</strong> option. Once the <strong>Hover Effect</strong> option is selected, another option below it will appear to let you choose the style of display on hover display alternative image display.</p>
+									<p>In these other options to you can set Hide-Show products elements in product slider.</p>
+									<p>Products Slider options affected all products slider like micro slider, tab slider, product slider etc...</p>
+								</div>
+							</div>
+						</li>
+						<li id="tp_general_testimonials"><h4>Testimonial Manager</h4>
+							<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; General &gt; Testimonial Manager</code> Panel section to start your custom settings configuration.</p>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_general_testimonials.png"><img class="img" src="assets/images/tp_general_testimonials.png" title="Testimonials"/></a>
+								</div>
+								<div class="col-md-6">
+									<br>
+									<p><strong><em>Display Testimonials &gt;</em></strong> Select Yes or No as per your requirement to display the Testimonials on your store home page.>
+								</div>
+							</div>
+						</li>
+						<li id="tp_general_social_links"><h4>Social Links</h4>
+							<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; General &gt; Social Links</code> Panel section to start your custom settings configuration.</p>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_general_social_links.png"><img class="img" src="assets/images/tp_general_social_links.png" title="Social Links"/></a>
+								</div>
+								<div class="col-md-6">
+									<br>
+									<p>Enter the Social links info in the text boxes provided. As of now Theme supports Facebook, Twitter, Pinterest, Google Plus and Instagram for your store. This links will be displayed on the header top bar, footer column and on contact us page. Leave the text box empty to remove that particular social link.
+								</div>
+							</div>
+						</li>
+						<li id="tp_general_newsletter"><h4>Newsletter</h4>
+							<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; General &gt; Newsletter</code> Panel section to start your custom settings configuration.</p>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_general_newsletter.png"><img class="img" src="assets/images/tp_general_newsletter.png" title="Newsletter"/></a>
+								</div>
+								<div class="col-md-6">
+									<ul class="fontsize90">
+										<li>Managing Newsletter has been made easy with Mailchimp integration in Neoncart. New users can signup for free <a href="http://mailchimp.com/" target="_blank">Mailchimp</a> Services, while the already registered users can create their Signup forms and copy paste the code here.</li>
+										<li>After Signing In or Logging In successfully, go to Lists in your Dashboard.</li>
+										<li>Click on "Create List" on top right corner of your screen.</li>
+										<li>After creating the List successfully, click on the List name, this will take you to the 
+										details of particular list.</li>
+										<li>Then click on Signup Forms Tab, this will open the details of different types of forms.</li>
+										<li>Click on "Embedded Forms options", this will open the "Embedded Form Code" detail with the 
+										preview of different forms.</li>
+										<li>Click on "Super Slim" option and copy the code below it. Paste the code in the text-area 
+										provided, as shown in image below.</li>
+										<li>Click on Save Settings button and the changes will be applied to the front of store.</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li id="tp_general_newsletter_pop"><h4>Newsletter Popup</h4>
+							<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; General &gt; Newsletter Popup</code> Panel section to start your custom settings configuration.</p>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_general_newsletter_pop.png"><img class="img" src="assets/images/tp_general_newsletter_pop.png" title="Newsletter Popup"/></a>
+								</div>
+								<div class="col-md-6">
+									<ul class="fontsize90">
+										<li>Here you can Enable/Disable popup as per your need.</li>
+										<li>You can edit popup content from Admin > Tools > Define Page Editor then Select "define_newsletter_popup.php" and edit content.   </li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li id="tp_general_googlemap"><h4>Google Map</h4>
+							<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; General &gt; Google Map</code> Panel section to start your custom settings configuration.</p>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_general_googlemap.png"><img class="img" src="assets/images/tp_general_googlemap.png" title="Google Map"/></a>
+								</div>
+								<div class="col-md-6">
+									<ul class="fontsize90">
+										<li>The Google Maps iFrame code is used to embed the Google map location of your store in the Contact Us page. If left empty the Map will be removed from contact us page.</li>
+										<li>Follow the below steps to get the iframe code of Map location for your store.</li>
+									</ul>
+									<br>
+									<ol class="fontsize90">
+									<li>Go to <a href="https://www.google.co.in/maps" target="_blank">Google Maps</a> and type the address of your store in the search bar on top left corner and hit enter or click on search icon. The map page will look something like below image.</li>
+									<img class="img" src="assets/images/google-map.png" alt="Google Map"><br><br>
+									<li>Click on Share link, highlighted in the image above. On click a pop up will appear with options of <strong>Share Link</strong> and <strong>Embed Map</strong>. Click on Embed Map option and the page will look as the below image.</li>
+									<a class="img-lnk" href="assets/images/google-map1.png"><img class="img" src="assets/images/google-map1.png" alt="Google Map"></a><br><br>
+									<li>Copy the iframe code displayed in the above image and paste it to the Google Map section in the iframe code area for theme.</li>
+									<li>Click on Save Settings button and the changes will be applied to the contact us page of store.</li>
+								</ol>
+								</div>
+							</div>
+						</li>
+						<li id="tp_general_googlerecaptcha"><h4>Google ReCAPTCHA</h4>
+							<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; General &gt; Google ReCAPTCHA</code> Panel section to start your custom settings configuration.</p>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_general_googlerecaptcha.png"><img class="img" src="assets/images/tp_general_googlerecaptcha.png" title="Google ReCAPTCHA"/></a>
+								</div>
+								<div class="col-md-6">
+									<ul class="fontsize90">
+										<li>You can add the google captcha field to the Create Account page and the Contact Us page, to prevent spam mails.</li>
+										<li>For that first login to your Google account and go to <a target="_blank" href="https://www.google.com/recaptcha/admin">Google Recaptcha Page</a>. This will open the page as shown below. Add the label and your Domain name as asked and click on register.</li>
+										<a class="img-lnk" href="assets/images/recaptcha.png"><img class="img" src="assets/images/recaptcha.png" alt="Google Captcha"></a><br><br>
+										<li>Once register button is clicked, you will be redirected to the catpcha set up page, where Secret Key and Site Key willl mentioned as shown in the image below.</li>
+										<a class="img-lnk" href="assets/images/recaptcha1.png"><img class="img" src="assets/images/recaptcha1.png" alt="Google Captcha"></a><br><br>
+										<li>Copy this Site Key and Secret key, paste them to the Google Captcha Section of theme admin panel as shown in the image below.</li>
+										<li>Click on Save Settings button and the changes will be applied to the front of store.</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+                </section>
+				<section id="tp_homepage_settings">
+                    <div class="page-header">
+                        <h3>Home Page</h3>
+						<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; Home Page &gt; Home Page Settings</code> Panel section to start your custom settings configuration.</p>
+                    </div>
+					<ul>
+						<li><h4>Home Page</h4>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_homepage_settings.png"><img class="img" src="assets/images/tp_homepage_settings.png" title="Homepage"/></a>
+								</div>
+								<div class="col-md-6">
+									<ul class="fontsize90">
+										<li>Select the homepage layout as per your requirement using this option. The live demo of header styles are visible on <a target="_blank" href="http://neoncart.wttechdesign.com/">Neoncart demo</a>.</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+                </section>
+				<section id="tp_topbar">
+                    <div class="page-header">
+                        <h3>TopBar</h3>
+						<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; TopBar &gt; Topbar Promo Content</code> Panel section to start your custom settings configuration.</p>
+                    </div>
+					<ul>
+						<li><h4>Topbar Promo Content</h4>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tpl_topbar_general.png"><img class="img" src="assets/images/tpl_topbar_general.png" title="Topbar"/></a>
+								</div>
+								<div class="col-md-6">
+									<br>
+									<p><strong><em>Display Promo Topbar &gt;</em></strong> Select yes to show topbar. </p>
+									<p><strong><em>Promo TopBar Content &gt;</em></strong> Enter promo topbar content.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+                </section>
+				<section id="tp_header">
+                    <div class="page-header">
+                        <h3>Header</h3>
+						<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; Header &gt; Header</code> Panel section to start your custom settings configuration.</p>
+                    </div>
+					<ul>
+						<li><h4>Header</h4>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_header_header.png"><img class="img" src="assets/images/tp_header_header.png" title="Header"/></a>
+								</div>
+								<div class="col-md-6">
+									<ul class="fontsize90">
+										<li>Select the header style as per your requirement using this option. The live demo of header styles are visible on <a target="_blank" href="http://neoncart.wttechdesign.com/">Neoncart demo</a>.</li>
+										<li>Neoncart comes with 12 different unique header styles as shown in the images below :
+											<ul class="fontsize90">
+												<li>Header Style - 1 <br><a class="img-lnk" href="assets/images/header_v1.png"><img class="img" src="assets/images/header_v1.png" alt="Header Style"></a></li>
+												<li>Header Style - 2 <br><a class="img-lnk" href="assets/images/header_v2.png"><img class="img" src="assets/images/header_v2.png" alt="Header Style"></a></li>
+												<li>Header Style - 3 <br><a class="img-lnk" href="assets/images/header_v3.png"><img class="img" src="assets/images/header_v3.png" alt="Header Style"></a></li>
+											</ul>
+										</li>
+										<li>You can select cart style as per your need.</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li id="tp_header_headercontent"><h4>Header Content</h4>
+							<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; Header &gt; Header Content</code> Panel section to start your custom settings configuration.</p>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_header_headercontent.png"><img class="img" src="assets/images/tp_header_headercontent.png" title="Header Content"/></a>
+								</div>
+								<div class="col-md-6">
+									<br>
+									<p><strong><em>Logo &gt;</em></strong> Add your store logo using this option. </p>
+									<p><strong><em>Favicon &gt;</em></strong> You can add the favicon too for your store.</p>
+									<p><strong><em>Contact Number &gt;</em></strong> Add your store contact number using this option.</p>
+									<p><strong><em>Time &gt;</em></strong> Add your store time using this option.</p>
+									<p><strong><em>Topbar Shipping Content &gt;</em></strong> Add your shipping content using this option.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+                </section>
+				<section id="tp_footer">
+                    <div class="page-header">
+                        <h3>Footer</h3>
+						<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; Footer &gt; Footer Settings</code> Panel section to start your custom settings configuration.</p>
+                    </div>
+					<ul>
+						<li><h4>Footer Settings</h4>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_footer.png"><img class="img" src="assets/images/tp_footer.png" title="Footer"/></a>
+								</div>
+								<div class="col-md-6">
+									<ul class="fontsize90">
+										<li>Select the footer style of your choice using this option. The live demo of footer styles are visible on <a target="_blank" href="http://neoncart.wttechdesign.com/">Neoncart demo</a>.</li>
+										<li>Neoncart comes with 12 footer styles as shown in the below images :
+											<ul class="fontsize90">
+												<li>Footer Style - 1 <br><a class="img-lnk" href="assets/images/footer_v1.png"><img class="img" src="assets/images/footer_v1.png" alt="Footer Style" /></a></li>
+												<li>Footer Style - 2 <br><a class="img-lnk" href="assets/images/footer_v2.png"><img class="img" src="assets/images/footer_v2.png" alt="Footer Style"></a></li>
+												<li>Footer Style - 3 <br><a class="img-lnk" href="assets/images/footer_v3.png"><img class="img" src="assets/images/footer_v3.png" alt="Footer Style"></a></li>
+												<li>Footer Style - 4 <br><a class="img-lnk" href="assets/images/footer_v4.png"><img class="img" src="assets/images/footer_v4.png" alt="Footer Style"></a></li>
+												<li>Footer Style - 5 <br><a class="img-lnk" href="assets/images/footer_v5.png"><img class="img" src="assets/images/footer_v5.png" alt="Footer Style"></a></li>
+												<li>Footer Style - 6 <br><a class="img-lnk" href="assets/images/footer_v6.png"><img class="img" src="assets/images/footer_v6.png" alt="Footer Style"></a></li>
+											</ul>
+										</li>
+										<li><strong><em>Payment Image &gt;</em></strong> The payment methods image gets displayed in the copyright section of Footer, you can upload the image as per your requirement..</li>
+										<li><strong><em>CopyRights Text &gt;</em></strong> Here you can set your store copyrights text.</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li id="tp_footer_storeinfo"><h4>Store Info</h4>
+							<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; Footer &gt; Store Info</code> Panel section to start your custom settings configuration.</p>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_footer_storeinfo.png"><img class="img" src="assets/images/tp_footer_storeinfo.png" title="Store Info"/></a>
+								</div>
+								<div class="col-md-6">
+									<br>
+									<p><strong><em>Footer Logo &gt;</em></strong> Add your store logo using this option. </p>
+									<p><strong><em>Store Description &gt;</em></strong> Here you can set your store description.</p>
+									<p><strong><em>Store Address &gt;</em></strong> Here you can set your store address.</p>
+									<p><strong><em>Contact Number &gt;</em></strong> Here you can set your store contact number.</p>
+									<p><strong><em>Email &gt;</em></strong> Here you can set your store email id.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+                </section>
+				<section id="tp_mainmenu">
+                    <div class="page-header">
+                        <h3>Main Menu</h3>
+						<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; Main Menu &gt; Main Menu Settings</code> Panel section to start your custom settings configuration.</p>
+                    </div>
+					<ul>
+						<li><h4>Main Menu Settings</h4>
+							<div class="row">
+								<div class="col-md-6">
+									<a class="img-lnk" href="assets/images/tp_mainmenu.png"><img class="img" src="assets/images/tp_mainmenu.png" title="Main Menu"/></a>
+								</div>
+								<div class="col-md-6">
+									<p><strong>Main Menu</strong> in the Neoncart template comes with 2 different styles. It covers the following options : </p>
+									<ol class="fontsize90">
+										<li>
+											Simple Menu (eg : shown in image below) - Simple menu is made for the stores which has a large number (more than 5 or 6) of main categories. <a href="#simple-menu-settings">Click here</a> for more info on Simple Menu.<br>
+											<a class="img-lnk" href="assets/images/header_v2.png"><img class="img" src="assets/images/header_v2.png" alt="Simple Menu" /></a><br><br>
+										</li>
+										<li>
+											Mega Menu (eg : shown in image below) - Mega menu is design for the store which has lesser number of main categories and more sub-categories. <a href="#mega-menu-settings">Click here</a> for more info on Mega Menu.
+											<a class="img-lnk" href="assets/images/header_v1.png"><img class="img" src="assets/images/header_v1.png" alt="Mega Menu" /></a><br><br>
+										</li>
+									</ol>
+								</div>
+							</div>
+							<div class="row">
+								<h4 id="simple-menu-settings">Simple Menu Settings</h4>
+								<ul>
+									<li>The main categories of store is contained under the <span class="color">SHOP</span> menu.</li>
+									<li><span class="color">Brands</span> menu contain the list of manufacturers added by your from the Store Admin.</li>
+									<li><span class="color">Ez-pages</span> contains the Ez-pages links that are enabled in header section. Look here Admin &gt; Tools &gt; Ez-Pages for more info on Ez-Pages.</li>
+									<li>To change the titles like Brands/Shop/Ez-Pages go to <span class="color">includes/languages/english/extra_definitions/neoncart</span> directory and open <span class="color">wt_neoncart_template.php</span> file to edit. In this file you will see the titles defined, change it as per your requirement. Repeat this step for all other languages if your store is multilingual.</li>
+									<li>To add any extra custom link to the Simple menu, open <span class="color">tpl_desktop_menu.php</span> file from <span class="color">includes/templates/neoncart/common/objects</span> directory. In this file edit the <strong>Simple Menu</strong> section as per your requirement.</li>
+								</ul>
+								<h4 id="mega-menu-settings">Mega Menu Settings</h4>
+								<ul>
+									<li>Select Mega Menu option from the Menu type section to display the Mega Menu on store front.</li>
+									<li>Below the Menu type section, your store categories will be displayed as shown in the image above, which you can configure and change individually as per your requirement. The default values will be selected and your store front with mega menu will look something like the following image : <br><br>
+									<a class="img-lnk" href="assets/images/tp_megamenu_mgpreview.png"><img class="img" src="assets/images/tp_megamenu_mgpreview.png" alt="Mega Menu" /></a><br><br>
+									</li>
+									<ol>
+										<li><span class="color">Badge</span> : By default the badge value is set to <strong>New</strong> which you can either set to <strong>Sale</strong> or <strong>None</strong> for any particular category as per your requirement.</li>
+										<li><span class="color">Subcategory Images</span> : The subcategory and its images will be displayed as shown in the image above. The subcategory image can be added as per the normal Zen cart process from Admin &gt; Catalog &gt; Categories/Products. By default the subcategories image are set to display, but it can removed if the value of Display Subcategory Image is set to No.</li>
+										<li><span class="color">Megamenu Side block</span> : Megamenu side block is used to promote the products from that particular category. The side block can be displayed in 3 different type of contents.<br>
+											<ol>
+												<li><strong>1. Specials Producs </strong><br> Specials Products to display particular category 3 random products with the slider.</li>
+												<li><strong>2. Featured Producs </strong><br> Featured Products to display particular category 3 random products with the slider.</li>
+												<li><strong>3. Banner </strong><br> You can set promote banner with link on the side block.</li>
+												<li><strong>3. None </strong><br> Hide the side block.</li>
+										</li>
+										<li><span class="color">Megamenu Bottom block</span> : Megamenu Bottom block is used to add the promotional banners for that particular category. You can allso add the link on that banner using this option. The bottom block will look something like following image. If not required, you can disable it by setting the value of Megamenu Bottom block to <strong>No</strong>.<br><br>
+										</li>
+									</ol>
+								</ul>
+								<div class="row">
+									<div class="col-md-6">
+										<a class="img-lnk" href="assets/images/tp_megamenu_mgoptions.png"><img class="img" src="assets/images/tp_megamenu_mgoptions.png" alt="Mega Menu"></a>
+									</div>
+									<div class="col-md-6">
+										<p><strong><em>Display in Menu &gt;</em></strong> You can Hide and Show categories in main navigation menu.</p>
+										<p><strong><em>Menu Type &gt;</em></strong> Here you can set menu type <strong>Megamenu</strong> and <strong>Classic</strong> style.</p>
+										<p><strong><em>Badge &gt;</em></strong> Here you can choose option <strong>New</strong>, <strong>Sale</strong> and <strong>none</strong> for display badge lable in categories.</p>
+										<p><strong><em>Megamenu Side Block &gt;</em></strong> Here you can choose option <strong>Specials</strong>, <strong>Featured</strong>, <strong>Banner</strong> and <strong>None</strong> type of products in Megamenu side block. 
+										</p>
+										<p><strong><em>Megamenu Bottom Block &gt;</em></strong> Megamenu Bottom block is used to add the promotional banners for that particular category. You can also add the link on that banner using this option. If not required, you can disable it by setting the value of Megamenu Bottom block to No.</p>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+                </section>
+				<section id="tp_banner_manager">
+                    <div class="page-header">
+                        <h3>Banner Manager</h3>
+						<p>Go to <code>Tools &gt; WT Neoncart Banner Manager</code> Panel section to start your custom settings configuration.</p>
+						<div class="row">
+							<div class="col-md-6">
+								<a class="img-lnk" href="assets/images/tp_banner_manager.png"><img class="img" src="assets/images/tp_banner_manager.png" alt="Banner Manager"/></a>
+							</div>
+							<div class="col-md-6">
+								<p>Template Top Banner, Middle Banner, Sidebar Banner and Footer Banners Manage from <a href="#et_wtwbm">WT Neoncart Banner Manager Module</a>.</p>
+							</div>
+						</div>
+                    </div>
+				</section>
+				<section id="tp_categorypage">
+                    <div class="page-header">
+                        <h3>Category Page</h3>
+						<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; Category Page &gt; Categories Settings</code> Panel section to start your custom settings configuration.</p>
+                    </div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/tp_categories_settings.png"><img class="img" src="assets/images/tp_categories_settings.png" title="Category Page"/></a>
+						</div>
+						<div class="col-md-6">
+							<p><strong><em>Category Page Layout &gt;</em></strong> Here you can set Categories page Layout.</p>
+							<p><strong><em>Categories Styles &gt;</em></strong> Here you can choose options for display categories.
+								<ul class="row">
+									<li class="col-md-6"><strong><em>Display Style - 1 </em></strong><br>
+										<a class="img-lnk" href="assets/images/catgrid-style-1.png"><img class="img" src="assets/images/catgrid-style-1.png" title="Category Style 1"/></a>
+									</li>
+									<li class="col-md-6"><strong><em>Display Style - 2 </em></strong><br>
+										<a class="img-lnk" href="assets/images/catgrid-style-2.png"><img class="img" src="assets/images/catgrid-style-2.png" title="Category Style 2"/></a>
+									</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/tp_categories_li.png"><img class="img" src="assets/images/tp_categories_li.png" title="Category List"/></a>
+						</div>
+						<div class="col-md-6">
+							<br>
+							<p>In Categories List you can set number of categories display per row for Category Page. you can set different size to display number of categories for responsive.</p>
+							<p>This options affected selected category page layout only.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/tp_categories_slider.png"><img class="img" src="assets/images/tp_categories_slider.png" title="Category Product Slider"/></a>
+						</div>
+						<div class="col-md-6">
+							<br>
+							<p>In Categories Product Slider you can set number of products display in Featured, Specials, New etc.. slider for Category Page.</p>
+							<p>This options affected selected category page layout only.</p>
+						</div>
+					</div>
+				</section>
+				<section id="tp_productlistpage">
+                    <div class="page-header">
+                        <h3>Products List Page</h3>
+						<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; Products List Page &gt; Products List Page Settings </code> Panel section to start your custom settings configuration.</p>
+                    </div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/tp_productlist_settings.png"><img class="img" src="assets/images/tp_productlist_settings.png" title="Products List Page"/></a>
+						</div>
+						<div class="col-md-6">
+							<p><strong><em>Product List Page Layout &gt;</em></strong> Here you can set product list page Layout.</p>
+							<p><strong><em>Product List &gt;</em></strong> In Product List you can set number of products display per row for product list page. you can set different size to display number of products for responsive.
+							</p>
+							<p>In Products Slider use <strong>Product List</strong> settings for display products in Featured, Specials, New etc.. slider.</p>
+							<p>This options affected selected products list page layout only.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/tp_products_elements_config.png"><img class="img" src="assets/images/tp_products_elements_config.png" title="Product Configuration"/></a>
+						</div>
+						<div class="col-md-6">
+							<br>
+							<p>In these options you can set Hide-Show products elements in product list page.</p>
+							<p><strong><em>Additional Image Style &gt;</em></strong> Here you can set additional image styles <strong>Default</strong> and <strong>Hover Effect.</p>
+							<p>If you choose <strong>Hover Effect</strong> you can set 2 different style(<strong>Fade Effect</strong> and <strong>Verticle Slide Effect</strong>) for display on hover image</p>
+						</div>
+					</div>
+				</section>
+				<section id="tp_productinfopage">
+                    <div class="page-header">
+                        <h3>Products Info Page</h3>
+						<p>Go to <code>Tools &gt; Neoncart Template Settings &gt; Products Info Page &gt; Products Info Page Settings </code> Panel section to start your custom settings configuration.</p>
+                    </div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/tp_productinfo_settings.png"><img class="img" src="assets/images/tp_productinfo_settings.png" title="Products Info Page"/></a>
+						</div>
+						<div class="col-md-6">
+							<p><strong><em>Product Info Page Layout &gt;</em></strong> Here you can set product info page Layout.</p>
+							<p><strong><em>Product Image Layout &gt;</em></strong> Here you can set Product Image Layouts(<strong>Big Size</strong>, <strong>Medium Size</strong> and <strong>Samll Size</strong>).
+								<ul class="row">
+									<li class="col-md-4"><strong><em>Big Size</em></strong><br>
+										<a class="img-lnk" href="assets/images/tp_productimage_bigsize.png"><img class="img" src="assets/images/tp_productimage_bigsize.png" title="Big size product image"/></a>
+									</li>
+									<li class="col-md-4"><strong><em>Medium Size</em></strong><br>
+										<a class="img-lnk" href="assets/images/tp_productimage_mediumsize.png"><img class="img" src="assets/images/tp_productimage_mediumsize.png" title="medium size product image"/></a>
+									</li>
+									<li class="col-md-4"><strong><em>Small Size</em></strong><br>
+										<a class="img-lnk" href="assets/images/tp_productimage_smallsize.png"><img class="img" src="assets/images/tp_productimage_smallsize.png" title="Small size product image"/></a>
+									</li>
+								</ul>
+							</p>
+							<p><strong><em>Product Image Effect &gt;</em></strong> Here you can set Product Image Effect Style(<strong>Elevate Zoom</strong> and <strong>Fotorama Slider</strong>).
+								<ul class="row">
+									<li class="col-md-6"><strong><em>Elevate Zoom Classic(Default)</em></strong><br>
+										<a class="img-lnk" href="assets/images/tp_productinfo_elevate_zoom_classic_horizontal_default.png"><img class="img" src="assets/images/tp_productinfo_elevate_zoom_classic_horizontal_default.png" title="Elevate Zoom Classic Horizontal"/></a>
+									</li>
+									<li class="col-md-6"><strong><em>Fotorama Slider</em></strong><br>
+										<a class="img-lnk" href="assets/images/tp_productinfo_fotorama.png"><img class="img" src="assets/images/tp_productinfo_fotorama.png" title="Fotorama Slider"/></a>
+									</li>
+								</ul>
+								<ul class="row">
+									<li class="col-md-6"><strong><em>Light Box</em></strong><br>
+										<a class="img-lnk" href="assets/images/tp_productinfo_lightbox.png"><img class="img" src="assets/images/tp_productinfo_lightbox.png" title="Light Box"/></a>
+									</li>
+									<li class="col-md-6"><strong><em>Zencart Default</em></strong><br>
+										<a class="img-lnk" href="assets/images/tp_productinfo_zendefault.png"><img class="img" src="assets/images/tp_productinfo_zendefault.png" title="Zencart Default"/></a>
+									</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/tp_productinfo_elements_config.png"><img class="img" src="assets/images/tp_productinfo_elements_config.png" title="Product Page Config"/></a>
+						</div>
+						<div class="col-md-6">
+							<br>
+							<p>In these options you can set Hide-Show products elements in product page.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/tp_productinfo_product_slider.png"><img class="img" src="assets/images/tp_productinfo_product_slider.png" title="Product Page Slider"/></a>
+						</div>
+						<div class="col-md-6">
+							<br>
+							<p>In Product Page Slider you can set number of products display in Related etc.. slider for Product Page.</p>
+							<p>This options affected selected product page layout only.</p>
+						</div>
+					</div>
+				</section>
+				<section id="ec_wt_slideshow_manager">
+					<div class="page-header">
+                        <h3>WT Slideshow Manager</h3>
+						<p>Go to <code>Tools &gt; WT Slideshow Manager</code> Panel section.</p>
+                    </div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/wt_slideshow_manager_sliders.png"><img class="img" src="assets/images/wt_slideshow_manager_sliders.png" title="WT Slideshow Manager Sliders"/></a>
+						</div>
+						<div class="col-md-6">
+							<p><strong><em>WT Slideshow Manager &gt;</em></strong> Here you can see list of sliders for the display on front side.</p>
+							<p><strong><em>New Slider Button &gt;</em></strong> You can create new diffrent style of the slider.</p>
+							<p><strong><em>View Banners Button &gt;</em></strong> You can manage list of banners for the slider.</p>
+							<p><strong><em>Edit Button &gt;</em></strong> You can edit the slider.</p>
+							<p><strong><em>Delete Button &gt;</em></strong> You can delete the slider.</p>
+							<p><strong><em>Embed Slider &gt;</em></strong> You can copy and past Homepage Short Code for the selected slider in Homepage and You can use OtherPage php Code function in php files.</p>
+							<p><strong><em>Status &gt;</em></strong> You can enable disable slider status.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/wt_slideshow_manager_add_slider.png"><img class="img" src="assets/images/wt_slideshow_manager_add_slider.png" title="New Slider"/></a>
+						</div>
+						<div class="col-md-6">
+							<br>
+							<p>After you click on the New Slider Button Open this Page.</p>
+							<p>Here we provide slider options to handler front side slider.</p>
+							<p><strong><em>Slider Tittle &gt;</em></strong> Enter the Slider Title.</p>
+							<p><strong><em>Show Full Screen &gt;</em></strong> Select yes to show slider as a full screen width and height.</p>
+							<p><strong><em>Slider Width &gt;</em></strong> Enter number of slider width. If Set "0" to show full width slider. </p>
+							<p><strong><em>Slider Height &gt;</em></strong> Enter number of slider height. If Set "0" to show slider banner height. </p>
+							<p><strong><em>Slider Infinite &gt;</em></strong> Set yes to show slide as infinte. </p>
+							<p><strong><em>Slider On Hover Stop &gt;</em></strong> Set yes to pause autoplay slider. </p>
+							<p><strong><em>Show Controls &gt;</em></strong> Set yes to show next-prev controls. </p>
+							<p><strong><em>Show Pager &gt;</em></strong> Set yes to show dots bottom of the slider. </p>
+							<p><strong><em>Auto Play &gt;</em></strong> Set yes to auto play slider. </p>
+							<p><strong><em>Auto Play Interval Time &gt;</em></strong> Set Autoplay Inverval Timeout in miliseconds. </p>
+							<p><strong><em>Slide Speed &gt;</em></strong> Set Slide animation speed in miliseconds. </p>
+							<p><strong><em>Slide Animation &gt;</em></strong> Show animation on the slide. </p>
+							<p><strong><em>Slider Status &gt;</em></strong> You can set slider status Active or Not Active.</p>
+							<p>After fill the New Slider form click to Insert Button then Click to View Banners Button for Add Banners.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/wt_slideshow_manager_banners.png"><img class="img" src="assets/images/wt_slideshow_manager_banners.png" title="Banners"/></a>
+						</div>
+						<div class="col-md-6">
+							<p>Here you can Manage Banner and Display Graph for Number of Times Display Banner and Clicked.</p>
+							<p><strong><em>Banners Status &gt;</em></strong> Current Status of the banners for Selected Date Range.</p>
+							<p><strong><em>New Banner Button &gt;</em></strong> You can create new banner.</p>
+							<p><strong><em>Edit Button &gt;</em></strong> You can edit the banner.</p>
+							<p><strong><em>Delete Button &gt;</em></strong> You can delete the banner.</p>
+							<p><strong><em>Back Slider Banner &gt;</em></strong> Back to Slider list.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/wt_slideshow_manager_add_banner.png"><img class="img" src="assets/images/wt_slideshow_manager_add_banner.png" title="New Banner"/></a>
+						</div>
+						<div class="col-md-6">
+							<br>
+							<p>After click on the New Banner Button Open this Page.</p>
+							<p><strong><em>Banner Tittle &gt;</em></strong> Enter the Banner Title.</p>
+							<p><strong><em>Banner Background Image &gt;</em></strong> Select the banner background image.<br><br>Note : Please select the image same height and width as Slider Type of Banners Hight & Width, You can check Height Width in demo page.</p>
+							<p><strong><em>Banner Type &gt;</em></strong> Select banner type want to show banner image with content, banner item image with content or banner image with link.</p>
+							<p><strong><em>Banner Image &gt;</em></strong> Select the banner image.<br><br>Note : Please select the image same height and width as Slider Type of Banners Hight & Width, You can check Height Width in demo page.</p>
+							<p><strong><em>Banner Content Position &gt;</em></strong> Set position to show banner content.</p>
+							<p><strong><em>Content Position Top &gt;</em></strong> Set top position to show banner content when banner content position is custom.</p>
+							<p><strong><em>Content Position Left &gt;</em></strong> Set left position to show banner content when banner content position is custom.</p>
+							<p><strong><em>Banner Content &gt;</em></strong> Enter the Banner content.</p>
+							<p><strong><em>Banner Extra Class &gt;</em></strong> Here you can add you own exctra class as per you design.</p>
+							<p><strong><em>Sort Order &gt;</em></strong> Set number of ordering to show banner in slider.</p>
+							<p><strong><em>Scheduled At &gt;</em></strong> Select start date for display banner.</p>
+							<p><strong><em>Expires On &gt;</em></strong> Select end date for hide banner.</p>
+							<p><strong><em>Banner Link &gt;</em></strong> Enter the Banner Url.</p>
+							<p><strong><em>Banner Status &gt;</em></strong> You can select Banner option Active or Not Active.</p>
+							<p>After fill the New Banner form click to Insert Button then display inserted banner in Slider Banners.</p>
+						</div>
+					</div>
+					
+				</section>
+				<section id="et_wtwbm">
+                    <div class="page-header">
+                        <h3>WT Neoncart Banner Manager</h3>
+						<p>Go to <code>Tools &gt; WT Neoncart Banner Manager</code> Panel section.</p>
+                    </div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/wt_neoncart_banner_manager_sliders.png"><img class="img" src="assets/images/wt_neoncart_banner_manager_sliders.png" title="Template Banner Manager"/></a>
+						</div>
+						<div class="col-md-6">
+							<p><strong><em>WT Neoncart Banner Manager &gt;</em></strong> Here you can see list of slider for the display in home page banners.</p>
+							<p><strong><em>New Slider Button &gt;</em></strong> You can create new diffrent style of the slider.</p>
+							<p><strong><em>View Banners Button &gt;</em></strong> You can manage list of banners for the slider.</p>
+							<p><strong><em>Edit Button &gt;</em></strong> You can edit the slider.</p>
+							<p><strong><em>Delete Button &gt;</em></strong> You can delete the slider.</p>
+							<p><strong><em>Embed Slider &gt;</em></strong> You can copy and past Homepage Short Code for the selected slider in Homepage and You can use OtherPage php Code function in php files.</p>
+							<p><strong><em>Status &gt;</em></strong> You can enable disable slider status.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/wt_neoncart_banner_manager_add_slider.png"><img class="img" src="assets/images/wt_neoncart_banner_manager_add_slider.png" title="New Slider"/></a>
+						</div>
+						<div class="col-md-6">
+							<br>
+							<p>After you click on the New Slider Button Open this Page.</p>
+							<p><strong><em>Slider Tittle &gt;</em></strong> Enter the Slider Title.</p>
+							<p><strong><em>Slider Type &gt;</em></strong> Select Slider Type for want to dispaly Banners.</p>
+							<p><strong><em>Slider Status &gt;</em></strong> You can set slider status Active or Not Active.</p>
+							<p>After fill the New Slider form click to Insert Button then Click to View Banners Button for Add Banners.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/wt_neoncart_banner_manager_banners.png"><img class="img" src="assets/images/wt_neoncart_banner_manager_banners.png" title="Banners"/></a>
+						</div>
+						<div class="col-md-6">
+							<p>Here you can Manage Banner and Display Graph for Number of Times Display Banner and Clicked.</p>
+							<p><strong><em>Banners Status &gt;</em></strong> Current Status of the banner for Selected Date Range.</p>
+							<p><strong><em>New Banner Button &gt;</em></strong> You can create new banner.</p>
+							<p><strong><em>Edit Button &gt;</em></strong> You can edit the banner.</p>
+							<p><strong><em>Delete Button &gt;</em></strong> You can delete the banner.</p>
+							<p><strong><em>Banner Impression Graph &gt;</em></strong> Here Display graph for Number of Time Shown Banners and Clicked.</p>
+							<p><strong><em>Back Slider Banner &gt;</em></strong> Back to Slider list.</p>
+							<p><strong><em>Banner Graph &gt;</em></strong> Banner Graph to show front side number of time banner loaded and clicked.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<a class="img-lnk" href="assets/images/wt_neoncart_banner_manager_add_banner.png"><img class="img" src="assets/images/wt_neoncart_banner_manager_add_banner.png" title="New Banner"/></a>
+						</div>
+						<div class="col-md-6">
+							<br>
+							<p>After click on the New Banner Button Open this Page.</p>
+							<p><strong><em>Banner Tittle &gt;</em></strong> Enter the Banner Title.</p>
+							<p><strong><em>Banner Url &gt;</em></strong> Enter the Banner Url.</p>
+							<p><strong><em>Image &gt;</em></strong> Select the banner image.<br><br>Note : Please select the image same height and width as Slider Type of Banners Hight & Width, You can check Height Width in demo page.</p>
+							<p><strong><em>HTML Text &gt;</em></strong> Enter the Banner content. Use {image} shot code for display diffrent position of image.</p>
+							<p><strong><em>Scheduled At &gt;</em></strong> Select the start date for display Banners.</p>
+							<p><strong><em>Expired On &gt;</em></strong> Select the end date for display Banners.</p>
+							<p><strong><em>Banner Status &gt;</em></strong> You can select Banner option Active or Not Active.</p>
+							<p>After fill the New Banner form click to Insert Button then display inserted banner in Slider Banners List.</p>
+						</div>
+					</div>
+				</section>
+				<section id="ec_disable_lang_cur_dropdown">
+					<div class="page-header"><h3>Disable Language/Currency Dropdown</h3></div>
+					<ul>
+						<li>Language and Currency Dropdowns are shown in the top bar of theme. You can disable them if you do not require in your store. Follow the below steps to do so :</li>
+						<li>Login to your store Admin Panel and go to <span class="color">Configuration &gt; Layout Settings.</span></li>
+						<li>At the bottom of page you will find option <span class="color">Show Languages in Header?</span> for languages and <span class="color">Show Currencies in Header?</span> for currencies. Both the values are set to "True" by default, change the value to "False" to remove it from Top Bar/Header.</li>
+					</ul>
+				</section>
+				<section id="ec_newsbox_manager">
+					<div class="page-header"><h3>News Box Manager</h3></div>
+					<ul>
+						<li>Neoncart comes with the News Box Manager plugin preinstalled. The configuration settings can be found under <span class="color">Admin &gt; Configuration &gt; News Box Manager</span>. You can set the Items to show on Home page and for Sidebox too. The News content lenght can also be changed using these options.</li>
+						<li>If you are willing to add new News for your store, go to<span class="color"> Admin &gt; Localization &gt; News Box Manager</span> where all your current news will be displayed. You can also insert/add latest news story for your store using this option.</li>
+					</ul>
+				</section>
+				<section id="ec_best_seller_products">
+					<div class="page-header"><h3>Best Seller Products</h3></div>
+					<ul>
+						<li>Best Seller products are displayed on the Home page in Products Tab.</li>
+						<li>To disable the Best Seller Products from HomePage go to Admin > Configuration > Best Seller and set the value of Show Best Sellers - Main Page to "0".</li>
+						<li>You also increase the number of Best Seller products to display on Homepage, which is by default set to "9".</li>
+						<li>Best Seller products image height/width can be set using from this section.
+							<a class="img-lnk" href="assets/images/bestseller.png"><img class="img" src="assets/images/bestseller.png" title="Bestseller"/></a>
+						</li>
+					</ul>
+				</section>
+				<section id="ec_footer_columns">
+					<div class="page-header"><h3>Footer Columns</h3></div>
+					<ul>
+						<li>Columns in Footer of Neoncart theme like "Informations", "Categories", "My Account", "Social Links", "Customer Services", "Contact Us", "Newsletter" etc can be edited using the Store Admin Panel</li>
+						<li>Select <span class="color">define_footer_account_links.php, define_footer_categories_links.php, define_footer_contact_us.php, define_footer_customer_services_links.php, define_footer_information_links.php</span> and <span class="color">define_footer_newsletter_column.php</span> files to edit. Here you can add/delete/edit the links and content as per your requirement.</li>
+						<li>To edit Footer columns go to Store <span class="color">Admin &gt; Tools &gt; Define Pages Editor</span>.</li>
+						<li>Select footer verions <span class="color">define_footer_v1.php, define_footer_v2.php, define_footer_v3.php</span> etc. files to edit. Here you can add/delete/edit the links and content as per your requirement.</li>
+					</ul>
+				</section>
+				<section id="ec_structured_data_config">
+					<div class="page-header"><h3>Structured Data Configuration</h3></div>
+					<p>Structured Data Configuration Plugin adds Schema (in JSON-LD format), Facebook and Twitter structured markup to all pages. Schema markup is added in three blocks : organisation, breadcrumbs and product (including reviews).</p>
+					<ul>
+						<li>To Add Organization Information and more configuration go to Store <span class="color">Admin &gt; Configuration &gt; Structured Data Configuration.</span>.</li>
+					</ul>
+				</section>
+				<section id="tp_zc_plugins">
+					<div class="page-header"><h3>Zencart Plugins</h3></div>
+					<p>We have used the following Zencart plugins in Neoncart. All the credit goes to their respective owner/developer.</p>
+					<ul>
+						<li><h4>Language Currency Links in Header</h4>
+							<p>It is used to get the language and currency. You can find it from <a href="http://www.zen-cart.com/downloads.php?do=file&amp;id=30" target="_blank">here..</a></p>
+						</li>
+						<li><h4>Compare Multiple Products</h4>
+							<p>This contribution adds a comparison system to the product listing page. It is done through a session so that products can be compared across multiple categories. You can find it from
+                            <a href="http://www.zen-cart.com/downloads.php?do=file&amp;id=1273" target="_blank">here..</a></p>
+						</li>
+						<li><h4>Wishlists</h4>
+							<p>This allows registered users to "save" products in personal wishlists. You can find it from<a href="http://www.zen-cart.com/downloads.php?do=file&amp;id=1072" target="_blank">here..</a>
+                        </p>
+						</li>
+						<li><h4>Column Layout</h4>
+							<p>This allows registered users to "save" products in personal wishlists. You can find it from <a href="http://www.zen-cart.com/downloads.php?do=file&amp;id=1072" target="_blank">here..</a></p>
+						</li>
+						<li><h4>Image Handler</h4>
+							<p>Image Handler 5 is really meant to ease the management of product images (particularly the management of additional product images), and to help improve page performance by optimizing the product images. You can find it from <a href="http://www.zen-cart.com/downloads.php?do=file&amp;id=1380" target="_blank">here..</a></p>
+						</li>
+						<li><h4>dgReviews</h4>
+							<p>This Plugin is used to view product reviews on product info page.You can find it from <a href="http://www.zen-cart.com/downloads.php?do=file&amp;id=116" target="_blank">here..</a></p>
+						</li>
+						<li><h4><a href="https://www.zen-cart.com/downloads.php?do=file&id=1774" target="_blank">CSS/JS Loader</a></h4></li>
+						<li><h4><a href="https://www.zen-cart.com/downloads.php?do=file&id=1336" target="_blank">Instant Search</a></h4></li>
+						<li><h4><a href="https://www.zen-cart.com/downloads.php?do=file&amp;id=419" target="_blank">Best Seller Reloaded</a></h4></li>
+						<li><h4><a href="https://www.zen-cart.com/downloads.php?do=file&amp;id=132" target="_blank">Ultimate SEO URLs</a></h4></li>
+						<li><h4><a href="https://www.zen-cart.com/downloads.php?do=file&amp;id=1305" target="_blank">Manufacturers Listing</a></h4></li>
+						<li><h4><a href="https://www.zen-cart.com/downloads.php?do=file&amp;id=1968" target="_blank">News Box Manager</a></h4></li>
+						<li><h4><a href="https://www.zen-cart.com/downloads.php?do=file&amp;id=299" target="_blank">Testimonial Manager</a></h4></li>						
+					</ul>
+				</section>
+				<section id="help_support">
+					<div class="page-header"><h3>Help & Support</h3></div>
+					<h4>Thanks for using Neoncart Theme!</h4>
+					<p>We provide 24/7 Support!. Please make sure you take a look at the available resources before submitting a support request.</p>
+					<p>If you have any question / issue you can contact us any time by sending us an email from our TemplateMonster author profile page.</p>
+				</section>
+            </div>
+        </div>
+    </div>
+	<script src="assets/js/jquery.easing.js"></script>
+	<script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/docs.min.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+
+</html>>

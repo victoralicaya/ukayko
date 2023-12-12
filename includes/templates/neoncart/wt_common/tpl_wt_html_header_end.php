@@ -1,0 +1,2 @@
+<script src="<?php echo $template->get_template_dir( 'jquery.min.js',DIR_WS_TEMPLATE, $current_page_base,'jscript' ) . '/jquery.min.js' ?>" type="text/javascript"></script>
+<?php require($template->get_template_dir('super_data_head.php',DIR_WS_TEMPLATE, $current_page_base,'jscript'). '/super_data_head.php'); ?>

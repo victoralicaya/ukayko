@@ -1,0 +1,23 @@
+.nav-list>.active>a,
+.nav-list>.active>a:hover,
+.nav-list>.active>a:focus{
+	background-color: #4b3b58;
+}
+a {
+  color: #cc1414;
+}
+.color{color: #cc1414;}
+a:hover, a:focus {
+  color: #31243c;
+}
+pre code {
+  color: #3b531e;
+}
+.theme--color{
+	color:#56782c;
+}
+section em {
+  color: #cc1414;
+  font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6 {color:#4b3b58;}

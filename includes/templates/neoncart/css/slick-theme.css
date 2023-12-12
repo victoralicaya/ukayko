@@ -1,0 +1,22 @@
+.slick-loading .slick-list{background:url(../images/ajax-loader.gif) center center no-repeat #fff}
+@font-face{font-style:normal;font-weight:400;font-family:slick;src:url(../fonts/slick/slick.ttf) format('truetype')}
+.slick-next,.slick-prev{top:50%;opacity:1;z-index:1;width:20px;height:20px;padding:0;border:none;outline:0;display:block;line-height:1;cursor:pointer;position:absolute;color:transparent;background:0 0;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%)}
+.slick-next:focus,.slick-next:hover,.slick-prev:focus,.slick-prev:hover{outline:0;color:transparent;background:0 0}
+.slick-next.slick-disabled:before,.slick-next:focus:before,.slick-next:hover:before,.slick-prev.slick-disabled:before,.slick-prev:focus:before,.slick-prev:hover:before{opacity:1}
+.slick-next:before,.slick-prev:before{opacity:1;color:#fff;line-height:1;font-size:20px;font-family:slick;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.slick-prev{left:15px}
+[dir=rtl] .slick-prev{left:auto;right:15px}
+.slick-prev:before{content:'←'}
+[dir=rtl] .slick-prev:before{content:'→'}
+.slick-next{right:15px}
+[dir=rtl] .slick-next{right:auto;left:15px}
+.slick-next:before{content:'→'}
+[dir=rtl] .slick-next:before{content:'←'}
+.slick-dotted.slick-slider{margin-bottom:30px}
+.slick-dots{bottom:0;margin:0;width:100%;padding:0;display:block;list-style:none;position:absolute;text-align:center}
+.slick-dots li{padding:0;width:20px;height:20px;margin:0 5px;cursor:pointer;position:relative;display:inline-block}
+.slick-dots li button{border:0;width:20px;height:20px;padding:5px;outline:0;line-height:1;display:block;cursor:pointer;color:transparent;background:0 0}
+.slick-dots li button:focus,.slick-dots li button:hover{outline:0}
+.slick-dots li button:focus:before,.slick-dots li button:hover:before{opacity:1}
+.slick-dots li button:before{top:0;left:0;width:20px;content:'';height:20px;color:#000;line-height:20px;position:absolute;text-align:center;font-family:slick;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.slick-dots li.slick-active button:before{opacity:1;color:#000}
